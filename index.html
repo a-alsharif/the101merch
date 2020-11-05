@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+
+
+body{
+  color:#fff;
+  background-color: #222}
+
+</style>
+
+<div id="instagram-feed1"></div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/InstagramFeed/1.4.0/InstagramFeed.min.js"></script>
+<script>
+
+(function(){
+        new InstagramFeed({
+            'username': 'the101merch',
+            'container': document.getElementById("instagram-feed1"),
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'callback': null,
+            'styling': true,
+            'items': 12,
+            'items_per_row': 3,
+            'margin': .5,
+            'lazy_load': true,
+            'on_error': console.error
+        });
+    })();
+
+
+
+</script>
+</body>
+</html>
